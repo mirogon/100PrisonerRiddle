@@ -6,62 +6,31 @@ if(NUM_BOXES%2 != 0) {
     Environment.Exit(-1);
 }
 
-Boxes boxes = new Boxes(NUM_BOXES);
 
-Prisoner[] prisoners = new Prisoner[NUM_BOXES];
-for(int i = 0; i < prisoners.Length; ++i) {
-    prisoners[i] = new Prisoner(i+1);
-}
+int numTimesSolvedWithRandom = 0;
+int numTimesSolvedWithCircle = 0;
 
-bool RandomSearch(Prisoner p, Box[] boxes) {
-    bool foundBox = false;
-    List<int> availableBoxes = new List<int>();
-    for(int i = 0; i < boxes.Length; ++i) {
-        availableBoxes.Add(i);
+int tries = 1000;
+
+//Trying to solve the riddle 100 times with 100 prisoners
+for(int i = 0; i < tries; ++i) {
+
+    //Create a Prisoner Riddle with 100 Prisoners/Boxes
+    RiddleSolver solver = new RiddleSolver(100);
+
+    //Each of every Prisoner opens NUM_BOXES/2 random boxes to find their own number
+    bool allFoundWithRandom = solver.SolveRandom();
+    if (allFoundWithRandom) {
+        ++numTimesSolvedWithRandom;
     }
 
-    for(int i = 0; i < NUM_BOXES/2; ++i) {
-        Random r = new Random();
-        int availableBoxesIndex = r.Next(availableBoxes.Count);
-        int boxIndex = availableBoxes[availableBoxesIndex];
-        availableBoxes.RemoveAt(availableBoxesIndex);
-
-        if (boxes[boxIndex].InsideNumber == p.PrisonerNumber) {
-            foundBox = true;
-        }
-    }
-    return foundBox;
-}
-
-bool CircleSearch(Prisoner p, Box[] boxes) {
-    int boxToSearch = p.PrisonerNumber;
-
-    for(int i = 0; i < NUM_BOXES/2; ++i) {
-        //Search right box
-        Box? b = null;
-        for(int j = 0; j < boxes.Length; ++j) {
-            if (boxes[j].OutsideNumber == boxToSearch) {
-                b = boxes[j];
-            }
-        }
-
-        if(b.InsideNumber == p.PrisonerNumber) {
-            return true;
-        }
-
-        boxToSearch = b.InsideNumber;
-    }
-
-    return false;
-}
-
-int numPrisonersFoundTheirNumber = 0;
-for(int i = 0; i < prisoners.Length; ++i) {
-    if (CircleSearch(prisoners[i], boxes.BoxList)) {
-        ++numPrisonersFoundTheirNumber;
+    //Each of every Prisoner opens NUM_BOXES/2 boxes with the "circle algorithm" to find their own number
+    bool allFoundWithCircle = solver.SolveCircle();
+    if (allFoundWithCircle) {
+        ++numTimesSolvedWithCircle;
     }
 }
 
-Console.WriteLine("Number of Prisoners: " + prisoners.Length);
-Console.WriteLine(numPrisonersFoundTheirNumber + " Found their number");
-
+Console.WriteLine("Results to solve the Riddle:");
+Console.WriteLine(((float)numTimesSolvedWithRandom/(float)tries)*100 + "% solved with Random box choice");
+Console.WriteLine(((float)numTimesSolvedWithCircle/(float)tries)*100 + "% solved with Circle box choice");
