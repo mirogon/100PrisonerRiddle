@@ -9,16 +9,16 @@ int numTimesSolvedWithCircle = 0;
 //Trying to solve the riddle [tries] times with [numPrisoners] prisoners
 for(int i = 0; i < tries; ++i) {
 
-    //Create a Prisoner Riddle with 100 Prisoners/Boxes
+    //Create a Prisoner Riddle with [numPrisoners] Prisoners/Boxes
     RiddleSolver solver = new RiddleSolver(numPrisoners);
 
-    //Each of every Prisoner opens NUM_BOXES/2 random boxes to find their own number
+    //Each of every Prisoner opens [numPrisoners/2] random boxes to find their own number
     bool allFoundWithRandom = solver.SolveRandom();
     if (allFoundWithRandom) {
         ++numTimesSolvedWithRandom;
     }
 
-    //Each of every Prisoner opens NUM_BOXES/2 boxes with the "circle algorithm" to find their own number
+    //Each of every Prisoner opens [numPrisoners/2] boxes with the "circle algorithm" to find their own number
     bool allFoundWithCircle = solver.SolveCircle();
     if (allFoundWithCircle) {
         ++numTimesSolvedWithCircle;
