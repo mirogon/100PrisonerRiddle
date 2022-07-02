@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "flZUj2VnS5eytQTB11Su+YuEReNnEVehBvpz+ECd2gEJoFaTjM2MfZCQoNAiKhsTCmm1xLgNC/lGuwWLrAG2/w==",
+  "dgSpecHash": "WzGPN1CA+xbLR9nZ/CpL3T/Q+d3BBrkZJV3wfQFU7lPLpyDvE4EZUbDzNpvarKCvTN68DpECeLrk7ZorWnpiOQ==",
   "success": true,
-  "projectFilePath": "D:\\DEV\\CSharp\\Projects\\100PrisonersTest\\100PrisonersTest.csproj",
+  "projectFilePath": "D:\\DEV\\CSharp\\Projects\\100PrisonersProject\\100PrisonersTest\\100PrisonersTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m1smr\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\m1smr\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

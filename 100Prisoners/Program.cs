@@ -1,6 +1,6 @@
 ﻿using _100Prisoners;
 
-const int NUM_BOXES = 1000;
+const int NUM_BOXES = 100;
 if(NUM_BOXES%2 != 0) {
     Console.WriteLine("NUMBER OF BOXES HAS TO BE DIVISIBLE BY 2");
     Environment.Exit(-1);
@@ -13,8 +13,8 @@ for(int i = 0; i < prisoners.Length; ++i) {
     prisoners[i] = new Prisoner(i+1);
 }
 
-bool PrisonerFindsHisBox(Prisoner p, Box[] boxes) {
-    bool prisonerFoundHisBox = false;
+bool RandomSearch(Prisoner p, Box[] boxes) {
+    bool foundBox = false;
     List<int> availableBoxes = new List<int>();
     for(int i = 0; i < boxes.Length; ++i) {
         availableBoxes.Add(i);
@@ -27,15 +27,37 @@ bool PrisonerFindsHisBox(Prisoner p, Box[] boxes) {
         availableBoxes.RemoveAt(availableBoxesIndex);
 
         if (boxes[boxIndex].InsideNumber == p.PrisonerNumber) {
-            prisonerFoundHisBox = true;
+            foundBox = true;
         }
     }
-    return prisonerFoundHisBox;
+    return foundBox;
+}
+
+bool CircleSearch(Prisoner p, Box[] boxes) {
+    int boxToSearch = p.PrisonerNumber;
+
+    for(int i = 0; i < NUM_BOXES/2; ++i) {
+        //Search right box
+        Box? b = null;
+        for(int j = 0; j < boxes.Length; ++j) {
+            if (boxes[j].OutsideNumber == boxToSearch) {
+                b = boxes[j];
+            }
+        }
+
+        if(b.InsideNumber == p.PrisonerNumber) {
+            return true;
+        }
+
+        boxToSearch = b.InsideNumber;
+    }
+
+    return false;
 }
 
 int numPrisonersFoundTheirNumber = 0;
 for(int i = 0; i < prisoners.Length; ++i) {
-    if (PrisonerFindsHisBox(prisoners[i], boxes.BoxList)) {
+    if (CircleSearch(prisoners[i], boxes.BoxList)) {
         ++numPrisonersFoundTheirNumber;
     }
 }

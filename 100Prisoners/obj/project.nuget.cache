@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T3DtsWx4kk7t86q4GIl+563F26oHqK7oEUh6PrK5oZk9OdzmQPIYnUnCnkl82XcYk81QKStLhWC2YyvS1Pymhw==",
+  "dgSpecHash": "eDr3YgFPijDSSlEy7JaGrcszrzoPx3eUiIPvXZCW921YasTWte+0iRm7oK5PtXbgSU42vQ08rfo2XwjUyLcBkw==",
   "success": true,
-  "projectFilePath": "D:\\DEV\\CSharp\\Projects\\100Prisoners\\100Prisoners.csproj",
+  "projectFilePath": "D:\\DEV\\CSharp\\Projects\\100PrisonersProject\\100Prisoners\\100Prisoners.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DEV\\CSharp\\Projects\\100Prisoners\\100Prisoners.csproj": {}
+    "D:\\DEV\\CSharp\\Projects\\100PrisonersProject\\100Prisoners\\100Prisoners.csproj": {}
   },
   "projects": {
-    "D:\\DEV\\CSharp\\Projects\\100Prisoners\\100Prisoners.csproj": {
+    "D:\\DEV\\CSharp\\Projects\\100PrisonersProject\\100Prisoners\\100Prisoners.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DEV\\CSharp\\Projects\\100Prisoners\\100Prisoners.csproj",
+        "projectUniqueName": "D:\\DEV\\CSharp\\Projects\\100PrisonersProject\\100Prisoners\\100Prisoners.csproj",
         "projectName": "100Prisoners",
-        "projectPath": "D:\\DEV\\CSharp\\Projects\\100Prisoners\\100Prisoners.csproj",
+        "projectPath": "D:\\DEV\\CSharp\\Projects\\100PrisonersProject\\100Prisoners\\100Prisoners.csproj",
         "packagesPath": "C:\\Users\\m1smr\\.nuget\\packages\\",
-        "outputPath": "D:\\DEV\\CSharp\\Projects\\100Prisoners\\obj\\",
+        "outputPath": "D:\\DEV\\CSharp\\Projects\\100PrisonersProject\\100Prisoners\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\m1smr\\AppData\\Roaming\\NuGet\\NuGet.Config",
