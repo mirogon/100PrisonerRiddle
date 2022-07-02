@@ -1,0 +1,15 @@
+D:\DEV\CSharp\Projects\100Prisoners\bin\Debug\net6.0\100Prisoners.exe
+D:\DEV\CSharp\Projects\100Prisoners\bin\Debug\net6.0\100Prisoners.deps.json
+D:\DEV\CSharp\Projects\100Prisoners\bin\Debug\net6.0\100Prisoners.runtimeconfig.json
+D:\DEV\CSharp\Projects\100Prisoners\bin\Debug\net6.0\100Prisoners.dll
+D:\DEV\CSharp\Projects\100Prisoners\bin\Debug\net6.0\100Prisoners.pdb
+D:\DEV\CSharp\Projects\100Prisoners\obj\Debug\net6.0\100Prisoners.csproj.AssemblyReference.cache
+D:\DEV\CSharp\Projects\100Prisoners\obj\Debug\net6.0\100Prisoners.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEV\CSharp\Projects\100Prisoners\obj\Debug\net6.0\100Prisoners.AssemblyInfoInputs.cache
+D:\DEV\CSharp\Projects\100Prisoners\obj\Debug\net6.0\100Prisoners.AssemblyInfo.cs
+D:\DEV\CSharp\Projects\100Prisoners\obj\Debug\net6.0\100Prisoners.csproj.CoreCompileInputs.cache
+D:\DEV\CSharp\Projects\100Prisoners\obj\Debug\net6.0\100Prisoners.dll
+D:\DEV\CSharp\Projects\100Prisoners\obj\Debug\net6.0\refint\100Prisoners.dll
+D:\DEV\CSharp\Projects\100Prisoners\obj\Debug\net6.0\100Prisoners.pdb
+D:\DEV\CSharp\Projects\100Prisoners\obj\Debug\net6.0\100Prisoners.genruntimeconfig.cache
+D:\DEV\CSharp\Projects\100Prisoners\obj\Debug\net6.0\ref\100Prisoners.dll

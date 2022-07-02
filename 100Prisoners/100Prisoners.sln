@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "100Prisoners", "100Prisoners.csproj", "{986CA20D-0570-4FD8-BCF1-6872A43756B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "100PrisonersTest", "..\100PrisonersTest\100PrisonersTest.csproj", "{A015DBC5-9431-455C-AD2C-5A3472E155B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{986CA20D-0570-4FD8-BCF1-6872A43756B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986CA20D-0570-4FD8-BCF1-6872A43756B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986CA20D-0570-4FD8-BCF1-6872A43756B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986CA20D-0570-4FD8-BCF1-6872A43756B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A015DBC5-9431-455C-AD2C-5A3472E155B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A015DBC5-9431-455C-AD2C-5A3472E155B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A015DBC5-9431-455C-AD2C-5A3472E155B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A015DBC5-9431-455C-AD2C-5A3472E155B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBA85C2D-D3B4-4588-8205-7D9FA1F07165}
+	EndGlobalSection
+EndGlobal
